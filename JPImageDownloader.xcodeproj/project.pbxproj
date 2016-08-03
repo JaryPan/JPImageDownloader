@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F22276991D51B6FE00386AD5 /* JPImageOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F22276981D51B6FE00386AD5 /* JPImageOperationManager.m */; };
+		F22711181D506FDB007E515A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F22711171D506FDB007E515A /* main.m */; };
+		F227111B1D506FDB007E515A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F227111A1D506FDB007E515A /* AppDelegate.m */; };
+		F227111E1D506FDB007E515A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F227111D1D506FDB007E515A /* ViewController.m */; };
+		F22711211D506FDB007E515A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F227111F1D506FDB007E515A /* Main.storyboard */; };
+		F22711231D506FDB007E515A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F22711221D506FDB007E515A /* Assets.xcassets */; };
+		F22711261D506FDC007E515A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F22711241D506FDC007E515A /* LaunchScreen.storyboard */; };
+		F22711311D506FDC007E515A /* JPImageDownloaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F22711301D506FDC007E515A /* JPImageDownloaderTests.m */; };
+		F227113C1D506FDC007E515A /* JPImageDownloaderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F227113B1D506FDC007E515A /* JPImageDownloaderUITests.m */; };
+		F227114B1D507152007E515A /* JPImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = F227114A1D507152007E515A /* JPImageDownloader.m */; };
+		F227114E1D5077E6007E515A /* JPImageOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F227114D1D5077E6007E515A /* JPImageOperation.m */; };
+		F22711511D5080E5007E515A /* JPImageCaches.m in Sources */ = {isa = PBXBuildFile; fileRef = F22711501D5080E5007E515A /* JPImageCaches.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F227112D1D506FDC007E515A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F227110B1D506FDB007E515A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F22711121D506FDB007E515A;
+			remoteInfo = JPImageDownloader;
+		};
+		F22711381D506FDC007E515A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F227110B1D506FDB007E515A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F22711121D506FDB007E515A;
+			remoteInfo = JPImageDownloader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F22276971D51B6FE00386AD5 /* JPImageOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPImageOperationManager.h; sourceTree = "<group>"; };
+		F22276981D51B6FE00386AD5 /* JPImageOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPImageOperationManager.m; sourceTree = "<group>"; };
+		F22711131D506FDB007E515A /* JPImageDownloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JPImageDownloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F22711171D506FDB007E515A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F22711191D506FDB007E515A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F227111A1D506FDB007E515A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F227111C1D506FDB007E515A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F227111D1D506FDB007E515A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F22711201D506FDB007E515A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F22711221D506FDB007E515A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F22711251D506FDC007E515A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F22711271D506FDC007E515A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F227112C1D506FDC007E515A /* JPImageDownloaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JPImageDownloaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F22711301D506FDC007E515A /* JPImageDownloaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPImageDownloaderTests.m; sourceTree = "<group>"; };
+		F22711321D506FDC007E515A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F22711371D506FDC007E515A /* JPImageDownloaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JPImageDownloaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F227113B1D506FDC007E515A /* JPImageDownloaderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPImageDownloaderUITests.m; sourceTree = "<group>"; };
+		F227113D1D506FDC007E515A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F22711491D507152007E515A /* JPImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPImageDownloader.h; sourceTree = "<group>"; };
+		F227114A1D507152007E515A /* JPImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPImageDownloader.m; sourceTree = "<group>"; };
+		F227114C1D5077E6007E515A /* JPImageOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPImageOperation.h; sourceTree = "<group>"; };
+		F227114D1D5077E6007E515A /* JPImageOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPImageOperation.m; sourceTree = "<group>"; };
+		F227114F1D5080E5007E515A /* JPImageCaches.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPImageCaches.h; sourceTree = "<group>"; };
+		F22711501D5080E5007E515A /* JPImageCaches.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPImageCaches.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F22711101D506FDB007E515A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F22711291D506FDC007E515A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F22711341D506FDC007E515A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F227110A1D506FDB007E515A = {
+			isa = PBXGroup;
+			children = (
+				F22711151D506FDB007E515A /* JPImageDownloader */,
+				F227112F1D506FDC007E515A /* JPImageDownloaderTests */,
+				F227113A1D506FDC007E515A /* JPImageDownloaderUITests */,
+				F22711141D506FDB007E515A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F22711141D506FDB007E515A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F22711131D506FDB007E515A /* JPImageDownloader.app */,
+				F227112C1D506FDC007E515A /* JPImageDownloaderTests.xctest */,
+				F22711371D506FDC007E515A /* JPImageDownloaderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F22711151D506FDB007E515A /* JPImageDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				F22711521D50A4F3007E515A /* class */,
+				F22711191D506FDB007E515A /* AppDelegate.h */,
+				F227111A1D506FDB007E515A /* AppDelegate.m */,
+				F227111C1D506FDB007E515A /* ViewController.h */,
+				F227111D1D506FDB007E515A /* ViewController.m */,
+				F227111F1D506FDB007E515A /* Main.storyboard */,
+				F22711221D506FDB007E515A /* Assets.xcassets */,
+				F22711241D506FDC007E515A /* LaunchScreen.storyboard */,
+				F22711271D506FDC007E515A /* Info.plist */,
+				F22711161D506FDB007E515A /* Supporting Files */,
+			);
+			path = JPImageDownloader;
+			sourceTree = "<group>";
+		};
+		F22711161D506FDB007E515A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F22711171D506FDB007E515A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F227112F1D506FDC007E515A /* JPImageDownloaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				F22711301D506FDC007E515A /* JPImageDownloaderTests.m */,
+				F22711321D506FDC007E515A /* Info.plist */,
+			);
+			path = JPImageDownloaderTests;
+			sourceTree = "<group>";
+		};
+		F227113A1D506FDC007E515A /* JPImageDownloaderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F227113B1D506FDC007E515A /* JPImageDownloaderUITests.m */,
+				F227113D1D506FDC007E515A /* Info.plist */,
+			);
+			path = JPImageDownloaderUITests;
+			sourceTree = "<group>";
+		};
+		F22711521D50A4F3007E515A /* class */ = {
+			isa = PBXGroup;
+			children = (
+				F22711491D507152007E515A /* JPImageDownloader.h */,
+				F227114A1D507152007E515A /* JPImageDownloader.m */,
+				F227114C1D5077E6007E515A /* JPImageOperation.h */,
+				F227114D1D5077E6007E515A /* JPImageOperation.m */,
+				F22276971D51B6FE00386AD5 /* JPImageOperationManager.h */,
+				F22276981D51B6FE00386AD5 /* JPImageOperationManager.m */,
+				F227114F1D5080E5007E515A /* JPImageCaches.h */,
+				F22711501D5080E5007E515A /* JPImageCaches.m */,
+			);
+			name = class;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F22711121D506FDB007E515A /* JPImageDownloader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F22711401D506FDC007E515A /* Build configuration list for PBXNativeTarget "JPImageDownloader" */;
+			buildPhases = (
+				F227110F1D506FDB007E515A /* Sources */,
+				F22711101D506FDB007E515A /* Frameworks */,
+				F22711111D506FDB007E515A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JPImageDownloader;
+			productName = JPImageDownloader;
+			productReference = F22711131D506FDB007E515A /* JPImageDownloader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F227112B1D506FDC007E515A /* JPImageDownloaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F22711431D506FDC007E515A /* Build configuration list for PBXNativeTarget "JPImageDownloaderTests" */;
+			buildPhases = (
+				F22711281D506FDC007E515A /* Sources */,
+				F22711291D506FDC007E515A /* Frameworks */,
+				F227112A1D506FDC007E515A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F227112E1D506FDC007E515A /* PBXTargetDependency */,
+			);
+			name = JPImageDownloaderTests;
+			productName = JPImageDownloaderTests;
+			productReference = F227112C1D506FDC007E515A /* JPImageDownloaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F22711361D506FDC007E515A /* JPImageDownloaderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F22711461D506FDC007E515A /* Build configuration list for PBXNativeTarget "JPImageDownloaderUITests" */;
+			buildPhases = (
+				F22711331D506FDC007E515A /* Sources */,
+				F22711341D506FDC007E515A /* Frameworks */,
+				F22711351D506FDC007E515A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F22711391D506FDC007E515A /* PBXTargetDependency */,
+			);
+			name = JPImageDownloaderUITests;
+			productName = JPImageDownloaderUITests;
+			productReference = F22711371D506FDC007E515A /* JPImageDownloaderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F227110B1D506FDB007E515A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = JaryPan;
+				TargetAttributes = {
+					F22711121D506FDB007E515A = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					F227112B1D506FDC007E515A = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = F22711121D506FDB007E515A;
+					};
+					F22711361D506FDC007E515A = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = F22711121D506FDB007E515A;
+					};
+				};
+			};
+			buildConfigurationList = F227110E1D506FDB007E515A /* Build configuration list for PBXProject "JPImageDownloader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F227110A1D506FDB007E515A;
+			productRefGroup = F22711141D506FDB007E515A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F22711121D506FDB007E515A /* JPImageDownloader */,
+				F227112B1D506FDC007E515A /* JPImageDownloaderTests */,
+				F22711361D506FDC007E515A /* JPImageDownloaderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F22711111D506FDB007E515A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F22711261D506FDC007E515A /* LaunchScreen.storyboard in Resources */,
+				F22711231D506FDB007E515A /* Assets.xcassets in Resources */,
+				F22711211D506FDB007E515A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F227112A1D506FDC007E515A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F22711351D506FDC007E515A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F227110F1D506FDB007E515A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F227111E1D506FDB007E515A /* ViewController.m in Sources */,
+				F227111B1D506FDB007E515A /* AppDelegate.m in Sources */,
+				F227114E1D5077E6007E515A /* JPImageOperation.m in Sources */,
+				F22276991D51B6FE00386AD5 /* JPImageOperationManager.m in Sources */,
+				F227114B1D507152007E515A /* JPImageDownloader.m in Sources */,
+				F22711511D5080E5007E515A /* JPImageCaches.m in Sources */,
+				F22711181D506FDB007E515A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F22711281D506FDC007E515A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F22711311D506FDC007E515A /* JPImageDownloaderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F22711331D506FDC007E515A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F227113C1D506FDC007E515A /* JPImageDownloaderUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F227112E1D506FDC007E515A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F22711121D506FDB007E515A /* JPImageDownloader */;
+			targetProxy = F227112D1D506FDC007E515A /* PBXContainerItemProxy */;
+		};
+		F22711391D506FDC007E515A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F22711121D506FDB007E515A /* JPImageDownloader */;
+			targetProxy = F22711381D506FDC007E515A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F227111F1D506FDB007E515A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F22711201D506FDB007E515A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F22711241D506FDC007E515A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F22711251D506FDC007E515A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F227113E1D506FDC007E515A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F227113F1D506FDC007E515A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F22711411D506FDC007E515A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JPImageDownloader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JaryPan.JPImageDownloader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F22711421D506FDC007E515A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JPImageDownloader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JaryPan.JPImageDownloader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F22711441D506FDC007E515A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JPImageDownloaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JaryPan.JPImageDownloaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JPImageDownloader.app/JPImageDownloader";
+			};
+			name = Debug;
+		};
+		F22711451D506FDC007E515A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JPImageDownloaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JaryPan.JPImageDownloaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JPImageDownloader.app/JPImageDownloader";
+			};
+			name = Release;
+		};
+		F22711471D506FDC007E515A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = JPImageDownloaderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JaryPan.JPImageDownloaderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = JPImageDownloader;
+			};
+			name = Debug;
+		};
+		F22711481D506FDC007E515A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = JPImageDownloaderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JaryPan.JPImageDownloaderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = JPImageDownloader;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F227110E1D506FDB007E515A /* Build configuration list for PBXProject "JPImageDownloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F227113E1D506FDC007E515A /* Debug */,
+				F227113F1D506FDC007E515A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F22711401D506FDC007E515A /* Build configuration list for PBXNativeTarget "JPImageDownloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F22711411D506FDC007E515A /* Debug */,
+				F22711421D506FDC007E515A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F22711431D506FDC007E515A /* Build configuration list for PBXNativeTarget "JPImageDownloaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F22711441D506FDC007E515A /* Debug */,
+				F22711451D506FDC007E515A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F22711461D506FDC007E515A /* Build configuration list for PBXNativeTarget "JPImageDownloaderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F22711471D506FDC007E515A /* Debug */,
+				F22711481D506FDC007E515A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F227110B1D506FDB007E515A /* Project object */;
+}
