@@ -20,7 +20,11 @@
 - (instancetype)initWithUrlString:(NSString *)urlString
 {
     if (self = [super init]) {
-        self.urlString = urlString;
+#if __IPHONE_OS_VERSION_MAX_ALLOWED > __IPHONE_7_0
+        self.urlString = [urlString stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet characterSetWithCharactersInString:@"`#%^{}\"[]|\\<> "].invertedSet];
+#else
+        self.urlString = [urlString stringByAddingPercentEscapesUsingEncoding:kCFStringEncodingUTF8];
+#endif
     }
     return self;
 }
