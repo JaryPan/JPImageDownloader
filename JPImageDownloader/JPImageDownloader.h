@@ -19,6 +19,17 @@
 + (void)cancelWithUrlString:(nonnull NSString *)urlString;
 
 
+/*
+ 如果不想有任何缓存，直接设置为0即可；
+ size指的是字节大小，例如：最大硬盘缓存设置为100兆，size应为1024*1024*100
+ */
+// 设置最大硬盘缓存（默认500M）
++ (void)setMaxDiskCachesSize:(NSUInteger)maxSize;
+
+// 设置最大内存缓存（默认50M）
++ (void)setMaxMemoryCachesSize:(NSUInteger)maxSize;
+
+
 // 获取硬盘缓存图片大小
 + (NSUInteger)diskCachesSize;
 // 获取硬盘缓存图片个数
