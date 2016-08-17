@@ -81,31 +81,31 @@ static JPImageCaches *instance = nil;
             case JPImageCacheTypeNone:
                 // 下载的图片
                 
-                // 缓存到硬盘中
-                [UIImagePNGRepresentation(image) writeToFile:[[self cachesFilePath] stringByAppendingPathComponent:imageName] atomically:YES];
                 // 判断硬盘中缓存大小是否超过上限
                 if ([self diskCachesSize] >= self.maxDiskCachesSize) {
                     [self clearDiskCaches:nil];
                 }
+                // 缓存到硬盘中
+                [UIImagePNGRepresentation(image) writeToFile:[[self cachesFilePath] stringByAppendingPathComponent:imageName] atomically:YES];
                 
-                // 缓存到内存中
-                [self.memoryCaches setValue:image forKey:imageName];
                 // 判断内存中缓存大小是否超过上限
                 if ([self memoryCachesSize] >= self.maxMemoryCachesSize) {
                     [self clearMemoryCaches];
                 }
+                // 缓存到内存中
+                [self.memoryCaches setValue:image forKey:imageName];
                 
                 break;
                 
             case JPImageCacheTypeDisk:
                 // 硬盘缓存的图片
                 
-                // 缓存到内存中
-                [self.memoryCaches setValue:image forKey:imageName];
                 // 判断内存中缓存大小是否超过上限
                 if ([self memoryCachesSize] >= self.maxMemoryCachesSize) {
                     [self clearMemoryCaches];
                 }
+                // 缓存到内存中
+                [self.memoryCaches setValue:image forKey:imageName];
                 
                 break;
                 
