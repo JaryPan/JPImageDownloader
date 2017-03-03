@@ -32,8 +32,8 @@ static JPImageCaches *instance = nil;
 {
     if (!instance) {
         instance = [super init];
-        self.maxDiskCachesSize = 1024 * 1024 * 500;
-        self.maxMemoryCachesSize = 1024 * 1024 * 50;
+        self.maxDiskCachesSize = 1024 * 1024 * 200;
+        self.maxMemoryCachesSize = 1024 * 1024 * 40;
         [instance createCachesFile];
         self.memoryCaches = [NSMutableDictionary dictionary];
     }

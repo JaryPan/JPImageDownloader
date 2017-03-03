@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "JPImageOperationManager.h"
 #import "JPImageOperation.h"
+#import "JPImageOperationManager.h"
 
 @interface JPImageDownloader : NSObject
 
@@ -23,10 +23,10 @@
  如果不想有任何缓存，直接设置为0即可；
  size指的是字节大小，例如：最大硬盘缓存设置为100兆，size应为1024*1024*100
  */
-// 设置最大硬盘缓存（默认500M）
+// 设置最大硬盘缓存（默认200M）
 + (void)setMaxDiskCachesSize:(NSUInteger)maxSize;
 
-// 设置最大内存缓存（默认50M）
+// 设置最大内存缓存（默认40M）
 + (void)setMaxMemoryCachesSize:(NSUInteger)maxSize;
 
 

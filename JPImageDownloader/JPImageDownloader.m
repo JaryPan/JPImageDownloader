@@ -43,13 +43,13 @@
 }
 
 
-#pragma mark - 设置最大硬盘缓存（默认500M）
+#pragma mark - 设置最大硬盘缓存（默认200M）
 + (void)setMaxDiskCachesSize:(NSUInteger)maxSize
 {
     [JPImageCaches sharedCaches].maxDiskCachesSize = maxSize;
 }
 
-#pragma mark - 设置最大内存缓存（默认50M）
+#pragma mark - 设置最大内存缓存（默认40M）
 + (void)setMaxMemoryCachesSize:(NSUInteger)maxSize
 {
     [JPImageCaches sharedCaches].maxMemoryCachesSize = maxSize;

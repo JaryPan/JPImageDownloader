@@ -29,9 +29,9 @@ typedef NS_ENUM(NSInteger, JPImageCacheType) {
 // 单例方法
 + (nonnull instancetype)sharedCaches;
 
-// 最大硬盘缓存（默认500M）
+// 最大硬盘缓存（默认200M）
 @property (nonatomic) NSUInteger maxDiskCachesSize;
-// 最大内存缓存（默认50M）
+// 最大内存缓存（默认40M）
 @property (nonatomic) NSUInteger maxMemoryCachesSize;
 
 // 获取缓存文件夹路径
