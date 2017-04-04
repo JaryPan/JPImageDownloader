@@ -134,7 +134,7 @@ static JPImageCaches *instance = nil;
 #pragma mark - 获取硬盘缓存图片大小
 - (NSUInteger)diskCachesSize
 {
-    __block NSUInteger size = 0;
+    NSUInteger size = 0;
     NSDirectoryEnumerator *fileEnumerator = [[NSFileManager defaultManager] enumeratorAtPath:[self cachesFilePath]];
     for (NSString *fileName in fileEnumerator) {
         NSString *filePath = [[self cachesFilePath] stringByAppendingPathComponent:fileName];
@@ -152,7 +152,7 @@ static JPImageCaches *instance = nil;
 - (void)calculateDiskCaches:(void (^)(NSUInteger, NSUInteger))completionHandler
 {
     dispatch_async(dispatch_queue_create(nil, nil), ^{
-        __block NSUInteger size = 0;
+        NSUInteger size = 0;
         NSDirectoryEnumerator *fileEnumerator = [[NSFileManager defaultManager] enumeratorAtPath:[self cachesFilePath]];
         NSUInteger fileCount = 0;
         for (NSString *fileName in fileEnumerator) {

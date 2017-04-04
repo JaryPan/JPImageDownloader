@@ -31,22 +31,20 @@
 }
 
 - (IBAction)diskSizeButtonAction:(id)sender {
-    __weak typeof(self) weakSelf = self;
-    
     [JPImageDownloader calculateDiskCaches:^(NSUInteger totalSize, NSUInteger fileCount) {
         if (totalSize < 1024*1024) {
-            weakSelf.diskSizeLabel.text = [NSString stringWithFormat:@"文件个数：%lu\n总大小：%.2f KB", fileCount, totalSize/1024.0];
-        } else {weakSelf.diskSizeLabel.text = [NSString stringWithFormat:@"文件个数：%lu\n总大小：%.2f M", fileCount, totalSize/1024.0/1024.0];
+            self.diskSizeLabel.text = [NSString stringWithFormat:@"文件个数：%lu\n总大小：%.2f KB", fileCount, totalSize/1024.0];
+        } else {
+            self.diskSizeLabel.text = [NSString stringWithFormat:@"文件个数：%lu\n总大小：%.2f M", fileCount, totalSize/1024.0/1024.0];
         }
     }];
 }
 - (IBAction)memorySizeButtonAction:(id)sender {
-    __weak typeof(self) weakSelf = self;
-    
     [JPImageDownloader calculateMemoryCaches:^(NSUInteger totalSize, NSUInteger fileCount) {
         if (totalSize < 1024*1024) {
-            weakSelf.memorySizeLable.text = [NSString stringWithFormat:@"文件个数：%lu\n总大小：%.2f KB", fileCount, totalSize/1024.0];
-        } else {weakSelf.memorySizeLable.text = [NSString stringWithFormat:@"文件个数：%lu\n总大小：%.2f M", fileCount, totalSize/1024.0/1024.0];
+            self.memorySizeLable.text = [NSString stringWithFormat:@"文件个数：%lu\n总大小：%.2f KB", fileCount, totalSize/1024.0];
+        } else {
+            self.memorySizeLable.text = [NSString stringWithFormat:@"文件个数：%lu\n总大小：%.2f M", fileCount, totalSize/1024.0/1024.0];
         }
     }];
 }
@@ -54,15 +52,13 @@
 - (IBAction)startDownloadImage:(id)sender {
     [self startAnimating];
     
-    __weak typeof(self) weakSelf = self;
-    
     [JPImageDownloader imageWithUrlString:self.images[self.index] completionHandler:^(UIImage * _Nullable image, NSError * _Nullable error, JPImageCacheType cacheType, NSURL * _Nullable imageURL) {
-        [weakSelf stopAnimating];
+        [self stopAnimating];
         
-        weakSelf.imageView.image = image;
-        weakSelf.index++;
-        if (weakSelf.index == 4) {
-            weakSelf.index = 0;
+        self.imageView.image = image;
+        self.index++;
+        if (self.index == 4) {
+            self.index = 0;
         }
     }];
     
